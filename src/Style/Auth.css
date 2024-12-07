@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Auth Container */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url('../Assets/BackgroundImage.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+/* Auth Box */
+.auth-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+.auth-box h2 {
+  color: #181212;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+button {
+  align-self: center; /* Center vertically within the flex container */
+  margin-left: auto;
+  margin-right: auto; /* Center horizontally within the flex container */
+}
+/* Form Layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Row Layouts */
+.Row1,
+.Row2,
+.Row3 {
+  display: flex;
+  gap: 15px;
+}
+
+.Row1 .input-group,
+.Row2 .input-group,
+.Row3 .input-group {
+  flex: 1; /* Ensures inputs are equally spaced */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 224, 224, 1);
+  background-color: rgba(248, 248, 248, 1);
+  color: #1f1e1e;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #323030;
+  border-width: 2px;
+}
+
+/* Button */
+.button {
+  width: 55%;
+  padding: 12px;
+  background-color: rgba(178, 217, 234, 1);
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+  
+}
+
+.button:hover {
+  background-color: rgba(135, 196, 223, 1);
+}
+
+/* Switch Page */
+.switch-page {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #4e4b4b;
+}
+
+.switch-page a {
+  font-weight: 500;
+  color: #181212;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.switch-page a:hover {
+  color: #514f4f;
+}
+
+/* Responsive Styles */
+
+/* Small Devices (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+  .auth-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('../Assets/BackgroundImage.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    align-items: self-start;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .auth-box {
+    padding: 20px;
+    margin-top: 12%;
+  }
+
+  .auth-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .Row1,
+  .Row2,
+  .Row3 {
+    flex-direction: column;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
+
+/* Medium Devices (tablets, 600px to 1024px) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .auth-box {
+    max-width: 600px;
+  }
+}
+
+/* Large Devices (desktops, 1024px and above) */
+@media only screen and (min-width: 1024px) {
+  .auth-box {
+    max-width:650px;
+  }
+  
+}

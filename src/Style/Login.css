@@ -1,0 +1,228 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Auth Container */
+  .auth-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('../Assets/BackgroundImage.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Auth Box */
+  .auth-box {
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 448px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0px;
+    height: 330px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 0.2px;
+  }
+  
+  /* Image Container */
+  .Image-Container {
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 318px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    height: 330px;
+    max-height: 330px;
+  }
+  
+  .Img {
+    padding-top: 25px;
+  }
+  .Para{
+    width: 70%;
+    padding-left: 45px;
+    padding-top: 4px;
+  }
+  .paragraph {
+    color: gray;
+    font-weight: 200;
+  }
+  
+  .auth-box h2 {
+    color: #181212;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  
+  /* Form Layout */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Row Layouts */
+  .Row1,
+  .Row2,
+  .Row3 {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .Row1 .input-group,
+  .Row2 .input-group,
+  .Row3 .input-group {
+    flex: 1; /* Ensures inputs are equally spaced */
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 224, 224, 1);
+    background-color: rgba(248, 248, 248, 1);
+    color: #1f1e1e;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .input-group input:focus {
+    border-color: #323030;
+    border-width: 2px;
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(178, 217, 234, 1);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: rgba(135, 196, 223, 1);
+  }
+  
+  /* Switch Page */
+  .switch-page {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #4e4b4b;
+  }
+  
+  .switch-page a {
+    font-weight: 500;
+    color: #181212;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .switch-page a:hover {
+    color: #514f4f;
+  }
+  
+  /* Responsive Styles */
+  /* Small Devices (phones, less than 600px) */
+@media only screen and (max-width: 600px) {
+    .auth-container {
+      flex-direction: column; /* Stack Image Container and Auth Box vertically */
+      align-items: center; /* Center the items horizontally */
+    }
+  
+    .auth-box {
+        padding: 20px;
+        height: auto;
+        border-radius: 5px;
+        margin-top: 20px;
+        width: 92%;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+  
+    .Image-Container {
+      
+      padding: 20px; /* Adjust padding for better spacing */
+      height: auto; /* Let height adjust dynamically */
+      border-radius: 5px;
+    }
+  
+    .auth-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .Row1,
+    .Row2,
+    .Row3 {
+      flex-direction: column; /* Stack the form elements on mobile */
+    }
+  
+    button {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Medium Devices (tablets, 600px to 1024px) */
+  @media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .auth-container {
+      flex-direction: row; /* Keep Image Container and Auth Box side by side */
+    }
+  
+    .auth-box {
+      max-width: 600px; /* Slightly wider for tablets */
+      border-radius: 15px; /* Slightly more rounded corners */
+    }
+  
+    .Image-Container {
+      max-width: 100%;
+      border-radius: 15px; /* More rounded corners on medium screens */
+    }
+  
+    .Row1,
+    .Row2,
+    .Row3 {
+      flex-direction: row; /* Keep form elements in a row for tablets */
+    }
+  
+    .auth-box h2 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  
+  /* Large Devices (desktops, 1024px and above) */
+  @media only screen and (min-width: 1024px) {
+    .auth-box {
+      max-width: 448px; /* Keep the original size for large screens */
+    }
+  
+    .Image-Container {
+      max-width: 318px;
+    }
+  
+    .auth-box h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
